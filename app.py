@@ -21,6 +21,7 @@ import json
 import logging
 from werkzeug.utils import secure_filename
 import tempfile
+import streamlit as st
 
 # Import our components
 from unified_consciousness_system import UnifiedConsciousnessSystem
@@ -222,3 +223,13 @@ if __name__ == '__main__':
         port=int(os.getenv('PORT', 5000)),
         debug=os.getenv('FLASK_ENV') == 'development'
     )
+
+st.title("Simple Streamlit Form")
+
+with st.form(key="my_form"):
+    name = st.text_input("Name")
+    email = st.text_input("Email")
+    submit_button = st.form_submit_button("Submit")
+
+    if submit_button:
+        st.success(f"Hello {name}! Your email ({email}) was submitted!")
