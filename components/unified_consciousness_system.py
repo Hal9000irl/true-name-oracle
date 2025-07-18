@@ -10,10 +10,10 @@ import logging
 from datetime import datetime
 import time
 
-from consciousness_frequency_detector import ConsciousnessFrequencyDetector
-from quantum_consciousness_seed import QuantumConsciousnessSeed  
-from crystal_programming_interface import CrystalProgrammingInterface
-from consciousness_safety_protocols import ConsciousnessIntegrityProtection
+from components.consciousness_frequency_detector import ConsciousnessFrequencyDetector
+from components.quantum_consciousness_seed import QuantumConsciousnessSeed
+from components.crystal_programming_interface import CrystalProgrammingInterface
+from components.consciousness_safety_protocols import ConsciousnessIntegrityProtection
 
 class SystemState(Enum):
     OFFLINE = "offline"

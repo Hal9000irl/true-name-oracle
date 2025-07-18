@@ -6,6 +6,7 @@ Integrates all components into unified web service
 
 import os
 import sys
+sys.path.append('components')
 from pathlib import Path
 
 # Add components to path
@@ -24,10 +25,10 @@ import tempfile
 import streamlit as st
 
 # Import our components
-from unified_consciousness_system import UnifiedConsciousnessSystem
-from consciousness_frequency_detector import ConsciousnessFrequencyDetector
-from crystal_programming_interface import CrystalProgrammingInterface
-from consciousness_safety_protocols import create_safety_system
+from components.unified_consciousness_system import UnifiedConsciousnessSystem
+from components.consciousness_frequency_detector import ConsciousnessFrequencyDetector
+from components.crystal_programming_interface import CrystalProgrammingInterface
+from components.consciousness_safety_protocols import ConsciousnessIntegrityProtection
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
